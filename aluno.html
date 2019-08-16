@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alunos - SEN</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/ladda/dist/ladda-themeless.min.css" />
 </head>
 
 <body>
@@ -37,7 +38,6 @@
     <div class="container-fluid">
         <form id="formAluno" autocomplete="off">
             <div class="row">
-
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="form-group">
                         <input type="text" name="nomeAluno" placeholder="Qual o nome do aluno?" class="form-control" />
@@ -65,9 +65,16 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <input type="date" name="dataNascismentoAluno" placeholder="Qual a data de nascimento do aluno?"
-                        class="form-control" />
+                    <div class="form-group">
+                        <input type="date" name="dataNascismentoAluno" placeholder="Qual a data de nascimento do aluno?"
+                            class="form-control" />
+                    </div>
                 </div>
+
+                <div class="col-12 d-flex justify-content-start">
+                    <button class="btn btn-primary" type="submit">Salvar</button>
+                </div>
+
             </div>
     </div>
     </form>
@@ -75,5 +82,8 @@
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/ladda/dist/spin.min.js"></script>
+<script src="node_modules/ladda/dist/ladda.min.js"></script>
+<script src="aluno.js"></script>
 
 </html>
